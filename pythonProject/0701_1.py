@@ -1,31 +1,19 @@
 
-def is_prime(n):
-    if n == 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
 
-def solution(n, k):
-    answer = 0
-    num = ''
+# dictionary 활용
+from math import ceil
 
-    while n:
-        # n을 k진법으로 변환
-        word = str(n%k)+num
-        n = n//k
+def solution(fees, records):
+    answer = []
+    default_time, default_fee, unit_time, unit_fee = fees
 
-    # num을 0으로 분리
-    num = num.split('0')
+    parking = {}   #주차 시간
+    using_time = {} #이용 시간
 
-    for i in num:
-        if len(i) == 0:
-            continue
-        if num == '0':
-            continue
-        elif is_prime(int(i)):
-            answer += 1
+    for record in records:
+        time, number, io = record.split()
+        hour, minute =
+
 
 
 
