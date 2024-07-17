@@ -25,3 +25,5 @@ def solution(n,k,enemy):
 
 
 print(solution(2,4,[3, 3, 3, 3]))
+
+
